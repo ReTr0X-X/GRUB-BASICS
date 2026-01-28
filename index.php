@@ -31,7 +31,7 @@ $result = $statement->fetchAll(PDO::FETCH_OBJ);
 </head>
 <body>
     <div class="container mt-3">
-        <div class="row justify-content-center">
+        <div>
             <div class="col-10 text-center">
                 <h3 class="text-primary">Hoogste achtbanen van Europa</h3>
             </div>
