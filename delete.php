@@ -5,7 +5,7 @@ include('config/config.php');
 $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
 $pdo = new PDO($dsn, $dbUser, $dbPass);
 
-$sql = "DELETE FROM HoogsteAchtbaanVanEuropa WHERE Id = :id";
+$sql = "DELETE FROM Rollercoaster WHERE Id = :id";
 
 $statement = $pdo->prepare($sql);
 

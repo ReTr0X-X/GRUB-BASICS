@@ -6,7 +6,7 @@ $pdo = new PDO($dsn, $dbUser, $dbPass);
 if (isset($_POST['submit'])) {
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-    $sql = "UPDATE HoogsteAchtbaanVanEuropa 
+    $sql = "UPDATE Rollercoaster 
             SET NameRollerCoaster = :rollerCoaster,
                 NameAmusementPark = :amusementPark,
                 Country = :country,
@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
                    TopSpeed, 
                    Height, 
                    BuildYear 
-            FROM HoogsteAchtbaanVanEuropa 
+            FROM Rollercoaster 
             WHERE Id = :id";
 
     $statement = $pdo->prepare($sql);

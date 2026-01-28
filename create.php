@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
 
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-    $sql = "INSERT INTO HoogsteAchtbaanVanEuropa (
+    $sql = "INSERT INTO Rollercoaster (
                 NameRollerCoaster,
                 NameAmusementPark,
                 Country,
@@ -119,7 +119,7 @@ if (isset($_POST['submit'])) {
         </div>
 
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
